@@ -12,6 +12,9 @@ References:
 - [Reduce screen motion on your iPhone, iPad, or iPod touch](https://support.apple.com/en-gb/HT202655)
 - [Understanding Success Criterion 2.3.3: Animation from Interactions](https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html)
 
+## Buttons
+- __Buttons with Images__ As with [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview) it is important to ensure that the [`accessibilityLabel`](https://developer.apple.com/documentation/objectivec/nsobject/1615181-accessibilitylabel) property is set to a meaningful string otherwise the image's file name will be read out which can be particularly unhelpful, and moreover confusing, to visually-impaired users attempting to discern the content of the image. If the [`UIButton`](https://developer.apple.com/documentation/uikit/uibutton) is in a XIB or storyboard then [Xiblint](https://github.com/lyft/xiblint) can be used to detect `UIButton` elements where an image has been set and raise a warning if a value for the `accessibilityLabel` property has not been specified.
+
 ## Consistency
 - __Consistent Placement of Elements__ Consistent placement of elements onscreen reduces cognitive load by helping users predict where to find information in the interface. Inconsistent placement can result in distraction or even confusion when the user finds that an element is not where expected it to be.
 
@@ -36,7 +39,7 @@ wishlistIcon.isAccessibilityEnabled = true
 wishlistIcon.accessibilityLabel = "This product is currently in your wishlist"
 ```
 
-- __Images Without Accessibility Labels__ - It is particularly important to ensure that `UIImageView` instances have the [`accessibilityLabel`](https://developer.apple.com/documentation/objectivec/nsobject/1615181-accessibilitylabel) property set to a meaningful string otherwise the image's file name will be read out which can be particularly unhelpful, and moreover confusing, to visually-impaired users attempting to discern the content of the image.
+- __Images Without Accessibility Labels__ - It is particularly important to ensure that [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview) instances have the [`accessibilityLabel`](https://developer.apple.com/documentation/objectivec/nsobject/1615181-accessibilitylabel) property set to a meaningful string otherwise the image's file name will be read out which can be particularly unhelpful, and moreover confusing, to visually-impaired users attempting to discern the content of the image. If the [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview) is in a XIB or storyboard then [Xiblint](https://github.com/lyft/xiblint) can be used to raise a warning if the `accessibilityLabel` property has not been set.
 
 Affects: [Visual](#Visual)
 
@@ -76,4 +79,12 @@ Affects: [Visual](#Visual)
 ### Physical
 ### Speech
 ### Visual
-Visual impairments are common and may result from a number of causes. In supporting users with visual impairments we are considering wearers of glasses https://www.w3.org/TR/WCAG20/
+
+# Software Supporting Accessibility
+
+## Libraries
+- [Capable](https://github.com/chrs1885/Capable) - Keep track of accessibility settings and enable users with disabilities to use your app.
+- [TypographyKit](https://github.com/rwbutler/TypographyKit) - Consistent & accessible visual styling on iOS with support for Dynamic Type.
+
+## Tools
+- [Xiblint](https://github.com/lyft/xiblint) - A tool by [Lyft](https://github.com/lyft) for linting storyboard and XIB files. Able to validate that UIImageViews and UIButtons with images have an accessibility label set.
