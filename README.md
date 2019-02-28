@@ -1,15 +1,20 @@
 ![iOS Accessibility Guidelines](https://github.com/rwbutler/iOSAccessibilityGuidelines/raw/master/docs/images/ios-accessibility-guidelines-banner.png)
 
 - [Guidelines](#guidelines)
+    - [Animation](#animation)
+    - [Buttons](#buttons)
+    - [Consistency](#consistency)
+    - [Images](#images)
+    - [Interaction](#interaction)
+    - [Navigation](#navigation)
+    - [Text & Color](#text--color)
 - [Accessibility Domains](#accessibility-domains)
 - [Accessibility Resources](#accessibility-resources)
 - [Software Supporting Accessibility](#software-supporting-accessibility)
     - [Libraries](#libraries)
     - [Tools](#tools)
 
-
 # Guidelines
-
 ## Animation
 
 - __Using Animation__ - Use of animation should be reduced or disabled altogether where the [`isReduceMotionEnabled`](https://developer.apple.com/documentation/uikit/uiaccessibility/1615133-isreducemotionenabled) flag is set. Overuse of animation can induce headaches in individuals who are particularly sensitive to motion such as those who suffer from a vestibular disorder.
