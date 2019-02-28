@@ -1,5 +1,15 @@
 # iOS Accessibility Guidelines
 
+- [Guidelines](#guidelines)
+- [Accessibility Domains](#accessibility-domains)
+- [Accessibility Resources](#accessibility-resources)
+- [Software Supporting Accessibility](#software-supporting-accessibility)
+    - [Libraries](#libraries)
+    - [Tools](#tools)
+
+
+# Guidelines
+
 ## Animation
 
 - __Using Animation__ - Use of animation should be reduced or disabled altogether where the [`isReduceMotionEnabled`](https://developer.apple.com/documentation/uikit/uiaccessibility/1615133-isreducemotionenabled) flag is set. Overuse of animation can induce headaches in individuals who are particularly sensitive to motion such as those who suffer from a vestibular disorder.
@@ -73,12 +83,15 @@ Affects: [Visual](#Visual)
 
 Affects: [Visual](#Visual)
 
-# Categories of impairment: 
+# Accessibility Domains
 ### Auditory
 ### Cognitive 
 ### Physical
 ### Speech
 ### Visual
+
+# Accessibility Resources
+- [Accessibility on iOS](https://developer.apple.com/accessibility/ios/) - Resources and documentation for developers seeking to develop inclusive apps that are compatible with assistive technologies on iOS.
 
 # Software Supporting Accessibility
 
@@ -87,4 +100,5 @@ Affects: [Visual](#Visual)
 - [TypographyKit](https://github.com/rwbutler/TypographyKit) - Consistent & accessible visual styling on iOS with support for Dynamic Type.
 
 ## Tools
+- [Accessibility Inspector](https://developer.apple.com/xcode/) - One of the developer tools bundled with Xcode that can be used for inspecting the accessibility properties of the elements which make up your app's UI.
 - [Xiblint](https://github.com/lyft/xiblint) - A tool by [Lyft](https://github.com/lyft) for linting storyboard and XIB files. Able to validate that UIImageViews and UIButtons with images have an accessibility label set.
