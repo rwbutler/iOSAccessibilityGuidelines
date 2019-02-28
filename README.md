@@ -1,4 +1,4 @@
-# iOS Accessibility Guidelines
+![iOS Accessibility Guidelines](https://github.com/rwbutler/iOSAccessibilityGuidelines/raw/master/docs/images/ios-accessibility-guidelines-banner.png)
 
 - [Guidelines](#guidelines)
 - [Accessibility Domains](#accessibility-domains)
