@@ -1,6 +1,7 @@
 ![iOS Accessibility Guidelines](https://github.com/rwbutler/iOSAccessibilityGuidelines/raw/master/docs/images/ios-accessibility-guidelines-banner.png)
 
-- [Guidelines](#guidelines)
+- [Accessibility Domains](#accessibility-domains)
+- [Accessibility Guidelines](#accessibility-guidelines)
     - [Animation](#animation)
     - [Buttons](#buttons)
     - [Consistency](#consistency)
@@ -8,13 +9,19 @@
     - [Interaction](#interaction)
     - [Navigation](#navigation)
     - [Text & Color](#text--color)
-- [Accessibility Domains](#accessibility-domains)
 - [Accessibility Resources](#accessibility-resources)
-- [Software Supporting Accessibility](#software-supporting-accessibility)
+- [Accessibility Software for iOS](#accessibility-software-for-ios)
     - [Libraries](#libraries)
     - [Tools](#tools)
 
-# Guidelines
+# Accessibility Domains
+### Auditory
+### Cognitive 
+### Physical
+### Speech
+### Visual
+
+# Accessibility Guidelines
 ## Animation
 
 - __Using Animation__ - Use of animation should be reduced or disabled altogether where the [`isReduceMotionEnabled`](https://developer.apple.com/documentation/uikit/uiaccessibility/1615133-isreducemotionenabled) flag is set. Overuse of animation can induce headaches in individuals who are particularly sensitive to motion such as those who suffer from a vestibular disorder.
@@ -88,17 +95,12 @@ Affects: [Visual](#Visual)
 
 Affects: [Visual](#Visual)
 
-# Accessibility Domains
-### Auditory
-### Cognitive 
-### Physical
-### Speech
-### Visual
-
 # Accessibility Resources
 - [Accessibility on iOS](https://developer.apple.com/accessibility/ios/) - Resources and documentation for developers seeking to develop inclusive apps that are compatible with assistive technologies on iOS.
 
-# Software Supporting Accessibility
+# Accessibility Software for iOS
+
+Software enabling iOS developers to implement assistive technologies in their apps.
 
 ## Libraries
 - [Capable](https://github.com/chrs1885/Capable) - Keep track of accessibility settings and enable users with disabilities to use your app.
