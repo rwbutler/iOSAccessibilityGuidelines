@@ -36,6 +36,10 @@ wishlistIcon.isAccessibilityEnabled = true
 wishlistIcon.accessibilityLabel = "This product is currently in your wishlist"
 ```
 
+- __Images Without Accessibility Labels__ - It is particularly important to ensure that `UIImageView` instances have the [`accessibilityLabel`](https://developer.apple.com/documentation/objectivec/nsobject/1615181-accessibilitylabel) property set to a meaningful string otherwise the image's file name will be read out which can be particularly unhelpful, and moreover confusing, to visually-impaired users attempting to discern the content of the image.
+
+Affects: [Visual](#Visual)
+
 ## Interaction
 - __Touch Area for Interactive Elements__ - The [iOS Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/) recommend a minimum tappable area of 44pt x 44pt for all controls. This is because for users with motor or visual impairments accuracy can be more difficult. Accuracy can also be a difficulty for younger users. 
 - __Hidden or Inactive Elements__ - These should be hidden from assistive technologies
@@ -62,7 +66,7 @@ Affects: [Visual](#Visual)
 
 Affects: [Visual](#Visual)
 
-- Use of Color - Color should not be used as the sole means of conveying information. 
+- __Use of Color__ - Color should not be used as the sole means of conveying information as users with color blindness may not be able to perceive the difference in color.
 
 Affects: [Visual](#Visual)
 
@@ -72,3 +76,4 @@ Affects: [Visual](#Visual)
 ### Physical
 ### Speech
 ### Visual
+Visual impairments are common and may result from a number of causes. In supporting users with visual impairments we are considering wearers of glasses https://www.w3.org/TR/WCAG20/
