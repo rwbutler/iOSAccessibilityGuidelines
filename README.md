@@ -1,5 +1,7 @@
 ![iOS Accessibility Guidelines](https://github.com/rwbutler/iOSAccessibilityGuidelines/raw/master/docs/images/ios-accessibility-guidelines-banner.png)
 
+Guidelines for creating accessible iOS apps.
+
 - [Accessibility Domains](#accessibility-domains)
 - [Accessibility Guidelines](#accessibility-guidelines)
     - [Animation](#animation)
