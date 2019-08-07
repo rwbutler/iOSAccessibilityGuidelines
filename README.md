@@ -106,6 +106,7 @@ Software enabling iOS developers to implement assistive technologies in their ap
 
 ## Libraries
 - [Capable](https://github.com/chrs1885/Capable) - Keep track of accessibility settings and enable users with disabilities to use your app.
+- [FlexibleRowHeightGridLayout](https://github.com/rwbutler/FlexibleRowHeightGridLayout) - A UICollectionView grid layout designed to support Dynamic Type by allowing the height of each row to size to fit content.
 - [TypographyKit](https://github.com/rwbutler/TypographyKit) - Consistent & accessible visual styling on iOS with support for Dynamic Type.
 
 ## Tools
