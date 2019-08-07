@@ -89,6 +89,14 @@ Affects: [Visual](#Visual)
 
 Affects: [Visual](#Visual)
 
+- __Capitalized Text__ - Capitalized text should be avoided where possible as VoiceOver may occasionally read out a word letter-by-letter when capitalized e.g. _A.D.D._ (as this stands for Attention deficit hyperactivity disorder) where the word _Add_ may have been intended. Text in all capital letters has been found to be harder to read not only for those with reading difficulties but for the majority of people. 
+
+	_Affects:_ [Visual](#Visual)
+
+	_Source:_ [Accessibility Requirements for People with Low Vision](http://w3c.github.io/low-vision-a11y-tf/requirements.html#capitalization)
+	
+	_Solution:_ Consider using a larger point size to give text prominence over capitalization.
+
 - __Contrast__
 
 Affects: [Visual](#Visual)
